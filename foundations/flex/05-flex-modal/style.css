@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/*
+- The close button is vertically aligned with the header, and aligned in the top-right of the card. */
+
 html, body {
   height: 100%;
 }
@@ -20,6 +23,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 5px;
 }
 
 .icon {
@@ -33,6 +42,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-left: 10px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.center {
+  margin-top: 10px;
+}
+
+.header{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .close-button {
@@ -48,12 +73,22 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.buttons {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 button.continue {
