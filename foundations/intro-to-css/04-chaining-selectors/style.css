@@ -4,3 +4,12 @@ original square proportions (don't hardcode in a pixel value for the height!).
 (here you should hardcode in a pixel value). */
 
 /* Add CSS Styling */
+
+.avatar.proportioned {
+    width: 300px; /* Maintained ratio */
+}
+
+.avatar.distorted {
+    width: 200px;
+    height: 400px; /* height double width */
+}
