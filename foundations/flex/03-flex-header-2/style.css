@@ -1,3 +1,11 @@
+/* ### Self Check
+- Everything is centered vertically inside the header.
+- There is 8px space between everything and the edge of the header.
+- Items are arranged horizontally as seen in the outcome image.
+- There is 16px between each item on both sides of the header.
+- flex is used to arrange everything. */
+
+
 /* this is some magical font-importing.  
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
@@ -12,6 +20,32 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.left-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.links {
+  display: flex;
+  margin-left: -25px;
+  gap: 16px;
+}
+
+.right-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -20,6 +54,14 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+}
+
+.notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .logo {
